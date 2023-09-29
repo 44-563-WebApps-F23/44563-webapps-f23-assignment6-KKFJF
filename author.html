@@ -24,13 +24,12 @@
      let oops = 0;
 
     function checkAuthor() {
-        console.log("Checking author guess");
-        const secretAuthorInput = document.getElementById("secretAuthor");
-        const guessAuthorInput = document.getElementById("guessAuthor");
-        const resultElement = document.getElementById("result");
+        secretAuthorInput = document.getElementById("secretAuthor");
+        guessAuthorInput = document.getElementById("guessAuthor");
+        resultElement = document.getElementById("result");
 
-        const secretAuthorValue = secretAuthorInput.value;
-        const guessAuthorValue = guessAuthorInput.value;
+        secretAuthorValue = secretAuthorInput.value;
+        guessAuthorValue = guessAuthorInput.value;
 
         if (secretAuthorValue === guessAuthorValue) {
             good++;
@@ -40,7 +39,7 @@
             alert("Sorry");
         }
 
-         resultElement.innerHTML = `Right: ${good}, Wrong: ${oops}`;
+        out.innerHTML = "Results: Good-"+good+",Oops-"+oops
     }
 </script>
 </body>
