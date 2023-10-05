@@ -4,8 +4,8 @@
         <title>Author </title>
     </head>
  
-<body>
-    <h1>Author Entry Deepthi</h1>
+<body style="background-color: rgb(116, 111, 111);">
+    <h1 style="color: rgb(65, 65, 180);">Author Entry Deepthi</h1>
     <form>
         <label for="hiddenAuthor">The hidden Author Name </label>
         <input type ="password" id="hiddenAuthor" name="author_name"  value="Dickens" disabled> <br>
@@ -33,12 +33,15 @@
             alert('You got it right')
             out.innerHTML="Results: Good-"+good+", Oops-"+oops
         } else {
+            if(oops>=7){
+                alert("Sorry, ran out of guesses");
+            }
+            else{
             oops++
             alert('Sorry')
             out.innerHTML="Results: Good-"+good+",Oops-"+oops
         }
-        
-    
+    } 
     }
     </script>
      <div id="imageContainer">
