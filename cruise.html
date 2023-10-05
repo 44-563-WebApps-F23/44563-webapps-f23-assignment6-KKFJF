@@ -7,9 +7,9 @@
     </title>
 </head>
 
-<body>
+<body style="background-color: rgb(191, 219, 210);">
 
-    <h1>Deepthi Mekala goes on a cruise</h1>
+    <h1 style="background-color: rgb(190, 185, 185);">Deepthi Mekala goes on a cruise</h1>
     <form>
         <input type="checkbox" id="shares_cabin" value="True">
         <label for="shares_cabin">Shares Cabin</label></br>
@@ -17,7 +17,7 @@
         <label for="breakfast">Breakfast</label></br>
         <input type="checkbox" id="pool_pass" value="False">
         <label for="pool_pass">Pool Pass</label></br>
-        <input type="button" onclick="selectCruise()" value="Select a Cruise">
+        <input type="button" onclick="selectCruise()" value="Select a Cruise" style="background-color: rgb(255, 170, 170);">
     </form>
     <p id="result" style="font-weight: bold;">The cruise details will be displayed here </p>
     <form>
@@ -25,7 +25,8 @@
         <input type="text" id="days" name="days" value="7"> <br>
         <label for="price">Enter price</label>
         <input type="text" id="price" name="price" value="1000"> <br>
-        <input type="button" onclick="updateCruise()" value="Update the Cruise">
+        <input type="button" onclick="updateCruise()" value="Update the Cruise" style="background-color: rgb(255, 170, 170);">
+        <p id="outturn" style="font-weight: bold;"></p>
     </form>
     <script>
         my_cruise = {};
@@ -41,7 +42,7 @@
             let price = document.getElementById("price").value;
             my_cruise["days"] = days;
             my_cruise["price"] = price;
-            document.getElementById("result").innerHTML = JSON.stringify(my_cruise);
+            document.getElementById("outturn").innerHTML = JSON.stringify(my_cruise);
         }
     </script>
 
