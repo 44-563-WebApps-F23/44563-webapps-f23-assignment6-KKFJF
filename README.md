@@ -2,6 +2,8 @@
 # WebApps-F23-Assignment-6
 Introduction to Java Script and DOM
 
+Hosted at [ClickHere](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-KKFJF/)
+
 Hosted at [ClickHere](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-KKFJF/author.html)
 
 Hosted at [ClickHere](https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment6-KKFJF/tips.html)
